@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+        <title>Jin's game</title>
+        <link rel="stylesheet" type="text/css" href="quiz.css" />
+    </head>
+    <body>
+        <div class="btitle">Jin的遊戲測驗</div>
+        <div class="text">測驗共5題，請選出一個正確的答案，全對者可獲得飲料一杯 ( :</div>
+        <div class="main">
+            <!-- 第一題 -->
+            <div class="col">
+                <div class="incol oncol" id="oncol">
+                    <div class="title">1. 這些劇很好看，哪一部除外 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrong(this);">新白娘子傳奇</div>
+                        <div class="w item" onclick="wrong(this);">花甲男孩轉大人</div>
+                        <div class="r item" id="ron" onclick="right(this);">梨泰院</div>
+                        <div class="w item" onclick="wrong(this);">新世紀福爾摩斯</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第二題 -->
+            <div class="col">
+                <div class="incol twcol" id="twcol">
+                    <div class="title">2. 我是超級</div>
+                    <div>
+                        <div class="w item" onclick="wrongtw(this);">狗奴</div>
+                        <div class="r item" id="rtw" onclick="righttw(this);">貓奴</div>
+                        <div class="w item" onclick="wrongtw(this);">鼠奴</div>
+                        <div class="w item" onclick="wrongtw(this);">兔奴</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第三題 -->
+            <div class="col">
+                <div class="incol thcol" id="thcol">
+                    <div class="title">3. 我沒有做過的工作</div>
+                    <div>
+                        <div class="w item" onclick="wrongth(this);">85度C店員</div>
+                        <div class="r item" id="rth" onclick="rightth(this);">KTV店員</div>
+                        <div class="w item" onclick="wrongth(this);">牙醫師助理</div>
+                        <div class="w item" onclick="wrongth(this);">律師助理</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第四題 -->
+            <div class="col">
+                <div class="incol focol" id="focol">
+                    <div class="title">4. 哪個選項吃不完 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongfo(this);">20顆水餃</div>
+                        <div class="r item" id="rfo" onclick="rightfo(this);">一份偈亭火鍋</div>
+                        <div class="w item" onclick="wrongfo(this);">麻醬麵+10顆水餃</div>
+                        <div class="w item" onclick="wrongfo(this);">麻醬麵+滷肉飯</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第五題 -->
+            <div class="col">
+                <div class="incol ficol" id="ficol">
+                    <div class="title ltitle">5. 猜我會想要</div>
+                    <div>
+                        <div class="w item" onclick="wrongfi(this);">回到過去，人生重來一次</div>
+                        <div class="w item" onclick="wrongfi(this);">直接到未來，略過不必要的過程</div>
+                        <div class="r item" id="rfi" onclick="rightfi(this);">都不想要，此時此刻過現在的人生</div>
+                    </div>
+                </div>
+            </div>
+            <div class="last" id="last">
+                Thank You !
+            </div>
+        </div>
+        <script src="quiz.js"></script>
+    </body>
+</html>

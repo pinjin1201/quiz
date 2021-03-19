@@ -1,0 +1,120 @@
+body{
+    font-size:16px;
+    text-align:center;
+    background-color:#880;
+}
+/* 大標 */
+.btitle{
+    font-size:3em;
+    font-family:"Comic Sans MS"," Microsoft JhengHei";
+    margin:50px 0px;
+    letter-spacing:0.2em;
+    font-weight:bold;
+}
+/* 說明文字 */
+.text{
+    font-size:1.3em;
+    font-family:Arial,Verdana;
+    margin-bottom:80px;
+    color:#2f4f4f;
+}
+.col{
+    display:flex;
+    justify-content:center;
+}
+.incol{
+    width:400px;height:270px;
+    margin-bottom:80px;
+    padding:30px;
+    background-color:#cef;
+    border-radius:3px;
+}
+/* col內的標題 */
+.title{
+    font-size:1.5em;
+    font-family:"Comic Sans MS"," Microsoft JhengHei";
+    font-weight:bold;
+}
+/* col內的選項*/
+.item{
+    border:2px solid #037;
+    padding:10px;
+    margin:10px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:20px;
+}
+.item:hover{
+    background-color:#888;
+    color:white;
+}
+/* 第二題 */
+.twcol{
+    display:none;
+}
+/* 第三題 */
+.thcol{
+    display:none;
+}
+/* 第四題 */
+.focol{
+    display:none;
+}
+/* 第五題 */
+.ficol{
+    display:none;
+}
+/* thank you */
+.last{
+    display:none;
+    font-family:"Comic Sans MS"," Microsoft JhengHei";
+    font-size:5em;
+    color:#191970;
+}
+@media(max-width:700px){
+    .btitle{
+        font-size:2em;
+    }
+    .text{
+        font-size:1em;
+        margin-bottom:60px;
+    }
+}
+@media(max-width:530px){
+    .btitle{
+        font-size:1.7em;
+    }
+    .text{
+        font-size:0.9em;
+        margin-bottom:50px;
+    }
+    .incol{
+        width:70%;
+    }
+    .title{
+        font-size:1.3em;
+    }
+    .last{
+        font-size:3em;
+    }
+}
+@media(max-width:450px){
+    .text{
+        font-size:0.7em;
+        margin-bottom:40px;
+    }
+    .title{
+        font-size:1.1em;
+    }
+}
+@media(max-width:390px){
+    .title{
+        font-size:1em;
+    }
+    .incol{
+        height:250px;
+    }
+    .item{
+        font-size:15px;
+    }
+}
